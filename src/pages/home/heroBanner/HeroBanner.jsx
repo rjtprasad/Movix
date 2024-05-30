@@ -16,7 +16,6 @@ function HeroBanner() {
   // upcoming movie
   const {data, loading} = useFetch("/movie/upcoming")
 
-
   useEffect(()=>{
     const bg = url.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
     setBackground(bg)
